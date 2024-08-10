@@ -11,7 +11,9 @@ async function getData(id) {
 
 // Server Component
 export default async function ComponentPage({ params }) {
-  const data = await getData(params.Id);
+  let data = await getData(params.Id);
+  
+  
 
   if (!data) {
     return <p>Data not found</p>;
@@ -64,7 +66,7 @@ export default async function ComponentPage({ params }) {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer />  
     </>
   );
 }
