@@ -1,4 +1,5 @@
 'use client'
+import Footer from '@/app/components/Footer'
 import { assets, blog_data } from '@/public/Assets/assets'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -63,6 +64,7 @@ const ComponentPage = ({params}) => {
             </div>
           </div>
     </div>
+    <Footer />
     </>:<></>
   )
 }
