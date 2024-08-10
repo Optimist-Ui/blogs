@@ -11,7 +11,7 @@ async function getData(id) {
 
 // Server Component
 export default async function ComponentPage({ params }) {
-  let data = await getData(params.Id);
+  let data = await getData(params.id);
   
   
 
